@@ -1,0 +1,23 @@
+h1. TMMoveToApplicationsFolder
+
+Gives a Cocoa application the ability to move itself to the Applications folder
+if it's launched from a different folder.
+
+h2. Usage
+
+Place <tt>TMMoveToApplicationsFolder.h</tt> and
+<tt>TMMoveToApplicationsFolder.m</tt> inside a source directory in your Xcode
+project. Add them to your project.
+
+In your application delegate, be sure to
+@#include <TMMoveToApplicationsFolder.h>@, then call
+
+<pre><code>
+[[TMMoveToApplicationsFolder applicationMover] checkApplicationFolder];
+</code></pre>
+
+in a method that is executed when the application is started.
+
+This method will handle all aspects of the application-move process: Prompting
+the user if necessary, moving the program if he or she chooses, relaunching the
+program, and setting a default key so that the prompt is not repeated.
