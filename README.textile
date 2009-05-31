@@ -21,3 +21,9 @@ in a method that is executed when the application is started.
 This method will handle all aspects of the application-move process: Prompting
 the user if necessary, moving the program if he or she chooses, relaunching the
 program, and setting a default key so that the prompt is not repeated.
+
+h2. User Help
+
+The prompt displayed to the user has a Help button which links to the
+<tt>move_application</tt> topic keyword. You can add help under this topic if
+you want to assist the user in his choice.
