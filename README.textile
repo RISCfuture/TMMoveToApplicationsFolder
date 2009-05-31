@@ -10,7 +10,7 @@ Place <tt>TMMoveToApplicationsFolder.h</tt> and
 project. Add them to your project.
 
 In your application delegate, be sure to
-@#include <TMMoveToApplicationsFolder.h>@, then call
+@#import <TMMoveToApplicationsFolder.h>@, then call
 
 <pre><code>
 [[TMMoveToApplicationsFolder applicationMover] checkApplicationFolder];
